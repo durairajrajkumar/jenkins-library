@@ -64,7 +64,7 @@ class TestRunnerThread extends Thread {
             "-e CASC_JENKINS_CONFIG=/workspace/jenkins.yml " +
             "-e ${testCaseConfig.deployCredentialEnv.username} " +
             "-e ${testCaseConfig.deployCredentialEnv.password} " +
-            "-e BRANCH_NAME=${testCaseConfig.referenceAppRepo.branch} ppiper/jenkinsfile-runner")
+            "-e BRANCH_NAME=${testCaseConfig.referenceAppRepo.branch} ppiper/jenkinsfile-runner:v2")
 
         println "*****[INFO] Test case '${uniqueName}' finished successfully.*****"
         printOutput()
